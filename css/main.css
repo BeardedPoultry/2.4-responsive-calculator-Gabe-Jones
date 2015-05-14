@@ -45,12 +45,12 @@ body:before {
     .body button.block:nth-child(4n+1) {
       clear: left; }
 
-.number {
+.button {
   background-color: #cecece;
-  margin: 10px;
-  margin-bottom: 10px; }
+  width: 50px;
+  height: 50px; }
 
-.right-class {
+.column4 {
   background-color: #f5923e;
   font-size: 2em;
   margin: 10px;
