@@ -28,27 +28,25 @@ body:before {
 .body {
   max-width: 68em;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%; }
   .body::after {
     clear: both;
     content: "";
     display: table; }
-  .body button.block {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 23.23176%; }
-    .body button.block:last-child {
-      margin-right: 0; }
-    .body button.block:nth-child(4n) {
-      margin-right: 0; }
-    .body button.block:nth-child(4n+1) {
-      clear: left; }
+  .body:last-child {
+    margin-right: 0; }
 
-.button {
+.columns {
   background-color: #cecece;
+  color: chocolate;
   width: 50px;
-  height: 50px; }
+  height: 50px;
+  font-size: 2em;
+  margin: 10px; }
 
 .column4 {
   background-color: #f5923e;
