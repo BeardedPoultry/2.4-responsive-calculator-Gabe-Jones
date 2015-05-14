@@ -1,3 +1,22 @@
+$visual-grid: true;
 @import '../bower_components/bourbon/app/assets/stylesheets/bourbon';
 @import '../bower_components/neat/app/assets/stylesheets/neat';
 
+.body {
+    @include outer-container;
+    button.block {
+    @include span-columns(3);
+    @include omega(4n);
+    }
+}
+.number {
+    background-color: rgba(206, 206, 206, 1);
+    margin: 10px;
+    margin-bottom: 10px;
+}
+.right-class {
+    background-color: rgba(245, 146, 62, 1);
+    font-size: 2em;
+    margin: 10px;
+    margin-bottom: 10px;
+}
