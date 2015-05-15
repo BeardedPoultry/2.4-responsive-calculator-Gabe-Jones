@@ -2,28 +2,55 @@ $visual-grid: true;
 
 @import '../bower_components/bourbon/app/assets/stylesheets/bourbon';
 @import '../bower_components/neat/app/assets/stylesheets/neat';
-
-.body {
-    @include outer-container;
-    @include span-columns(3);
-    margin-left:  60%;
+body {
+  margin: 0;
+  margin-top: 0;
 }
-button {
+.calc {
+  background-color: rgba(65, 131, 126, 1);
+  height: 50px;
+  border-bottom-color: rgba(0, 52, 48, 1);
+  border-bottom: 4px;
+}
+.container {
+  width: 350px;
+  height: 500px;
+  margin: 0 auto;
+  border: 1px solid;
+  position: relative;
+  top: 50%;
+  transform: translateY(50%);
+  background-color: rgba(35, 104, 99, 1);
+}
+.number,
+.numberZ {
+  background-color: rgba(98, 243, 255, 1);
+}
+.numberend {
+  background-color: rgba(255, 170, 78, 1);
+}
+.number,
+.numberend {
     width: 55px;
     height: 55px;
 }
-.columns {
-    background-color: rgba(206, 206, 206, 1);
-    color: chocolate;
-    font-size: 2em;
-    display: inline-block;
+.numberZ {
+  width: 125px;
+  height: 55px
 }
-.column4 {
-    
+.columns {
     font-size: 2em;
     margin: 10px;
-    margin-bottom: 10px;
+    margin-top: 2%;
+    display: inline-block;
 }
+.column1,
+.column2,
+.column3,
+.column4,
 .column5 {
-    background-color: rgba(245, 146, 62, 1);
+  font-size: 2em;
+  margin: 10px;
+  margin-top: 2%;
+  display: inline-block;
 }
