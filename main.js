@@ -30,13 +30,3 @@ function alertNumberPlusNumber(event) {
 
 //[].forEach.call(buttons, function(element){element,addEventListener('click')
 //
-
-document.body.addEventListener("click", function(event) {
-    if (event.target.nodeName == "button")
-      console.log("Clicked", event.target.textContent);
-  });
-
-  addEventListener("keydown", function(event) {
-    if (event.keyCode == 32 && event.ctrlKey)
-      console.log("Continuing!");
-  });
