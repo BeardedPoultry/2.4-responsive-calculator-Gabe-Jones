@@ -1,6 +1,9 @@
 // 1. Write a function that alerts the value of a button
 // 2. Write a event listener that listens for the event
 //    of clicking on a word button and calls the function from (1)
+alert("hello");
+
+
 var numberList = [];
 var equasionInput = numberList.join('');
 var equasionAnswer = eval(equasionInput);
@@ -25,5 +28,15 @@ function alertNumberPlusNumber(event) {
   alert(number + number);
 }
 
-[].forEach.call(buttons, function(element){element,addEventListener('click')
-)
+//[].forEach.call(buttons, function(element){element,addEventListener('click')
+//
+
+document.body.addEventListener("click", function(event) {
+    if (event.target.nodeName == "button")
+      console.log("Clicked", event.target.textContent);
+  });
+
+  addEventListener("keydown", function(event) {
+    if (event.keyCode == 32 && event.ctrlKey)
+      console.log("Continuing!");
+  });
